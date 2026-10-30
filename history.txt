@@ -1,0 +1,21 @@
+    1  history
+    2  audo apt update 
+    3  sudo apt update
+    4  sudo apt install -y lvm2
+    5  lsblk
+    6  sudo pvcreate /dev/sbd /dev/sdc /dev/sdd
+    7  pv create /dev/sdb
+    8  pvcreate /dev/sdb
+    9  sudo pvcreate /dev/sdb
+   10  sudo pvs
+   11  sudo vgcreate datos /dev/sdb /dev/sdc /dev/sdd
+   12  sudo vgs
+   13  sudo lvcreate -L 1G -n www datos
+   14  sudo lvcreate -L 4G -n salvas datos
+   15  sudo lvs
+   16  sudo lvextend -L 2G /dev/datos/www
+   17  sudo lvs
+   18  mkdir ~/tp-lvm
+   19  cd ~/tp-lvm
+   20  history.txt
+   21  history > history.txt
